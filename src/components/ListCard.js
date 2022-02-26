@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { DragAndDrop } from "../globalStates/Actions";
 
 function ListCard(props) {
-  const myTodoList = useSelector((state) => state.TaskReducer.TaskList);
+  const myTodoList = useSelector((state) => state.TaskReducer);
   const dispatch = useDispatch();
 
   const [{ isOver }, drop] = useDrop(() => ({
@@ -33,7 +33,7 @@ function ListCard(props) {
       <h5 style={{ textAlign: "center", marginTop: "5px" }}>
         {props.color} {props.categoryName}
       </h5>
-      {myTodoList.map((task) =>
+      {myTodoList.TaskList.map((task) =>
         task.category === props.category ? (
           <Task task={task} key={task.id} />
         ) : null

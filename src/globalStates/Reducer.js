@@ -2,7 +2,7 @@ const initialState = {
   TaskList: localStorage.getItem("myList")
     ? JSON.parse(localStorage.getItem("myList"))
     : [],
-  showComponent: "graphical",
+  showComponent: "categorical",
 };
 
 const TaskReducer = (state = initialState, action) => {
@@ -10,11 +10,11 @@ const TaskReducer = (state = initialState, action) => {
     case "UPDATETASKLIST":
       if (state.TaskList) {
         let todo = [...state.TaskList, action.payload];
-        console.log("todo", todo);
+        // console.log("todo", todo);
         localStorage.setItem("myList", JSON.stringify(todo));
         state.TaskList = todo;
       } else {
-        console.log(action.payload);
+        // console.log(action.payload);
         localStorage.setItem("myList", JSON.stringify(action.payload));
         state.TaskList = [action.payload];
       }

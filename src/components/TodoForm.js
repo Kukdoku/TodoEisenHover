@@ -21,6 +21,7 @@ function TodoForm() {
         timestamp: new Date(),
       })
     );
+    setTask('')
   };
   return (
     <div className="todoForm">

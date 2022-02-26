@@ -20,7 +20,7 @@ function App() {
   const list4 = ["card-4", "card", "4", "UnUrgent & UnImportant", "🔴"];
 
   let mydata;
-  if (showComp === "graphical") {
+  if (showComp === "categorical") {
     mydata = (
       <DndProvider backend={HTML5Backend}>
         <div className="todoList_board">
@@ -51,10 +51,10 @@ function App() {
           All Task
         </p>
         <p
-          style={showComp === "graphical" ? { color: "red" } : {}}
-          onClick={() => dispatch(ShowComponent("graphical"))}
+          style={showComp === "categorical" ? { color: "red" } : {}}
+          onClick={() => dispatch(ShowComponent("categorical"))}
         >
-          graphical{" "}
+          categorical{" "}
         </p>
         {/* <p
           style={showComp === "tracker" ? { color: "red" } : {}}
