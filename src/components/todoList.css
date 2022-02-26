@@ -1,0 +1,35 @@
+.todoList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%;
+}
+
+.todoList__1 {
+  background-color: #a3ffbc;
+}
+.todoList__2 {
+  background-color: #f7df8f;
+}
+.todoList__3 {
+  background-color: #f6ff7a;
+}
+.todoList__4 {
+  background-color: #ffb39c;
+}
+
+.todo {
+  width: 40%;
+  height: 30vh;
+
+  /* margin-top: 2%; */
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.todoList__2,
+.todoList__4 {
+  margin-left: 6%;
+}

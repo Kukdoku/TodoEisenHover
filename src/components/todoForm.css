@@ -1,0 +1,31 @@
+.todoForm__textInput {
+  height: 20px;
+  border-radius: 9px;
+  border: 1px solid gray;
+}
+
+.todoForm__fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.todoForm__selection {
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 9px;
+  border: 1px solid gray;
+}
+
+.todoForm__selection > option {
+  height: 20px;
+}
+
+.todoForm__button {
+  border-radius: 9px;
+  height: 25px;
+  border: 1px solid gray;
+  cursor: pointer;
+}

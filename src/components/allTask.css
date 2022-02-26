@@ -1,0 +1,14 @@
+.allTask__tsk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+}
+
+.allTask {
+  background-color: rgb(255, 225, 190);
+  margin: 10px 5% 5%;
+  height: 80vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
